@@ -1,0 +1,32 @@
+# Terraform state and backups
+*.tfstate
+*.tfstate.backup
+
+# Local .terraform directory (plugins, modules)
+.terraform.lock.hcl
+
+# Plan files
+*.tfplan
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Override / local-only files
+override.tf
+override.tf.json
+override*.tf
+
+# Crash logs
+crash.log
+crash.log.*
+
+# IDE / OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# some other common ignores
+Jenkinsfile
+jenkins-install.sh
