@@ -3,6 +3,7 @@ resource "aws_instance" "ec2" {
 
   ami           = data.aws_ami.amazon_linux.id
   instance_type = local.instance_type_map[count.index]
+  key_name      = "RamCloud"
 
   subnet_id = aws_subnet.public[count.index % length(aws_subnet.public)].id
 
